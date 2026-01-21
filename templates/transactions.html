@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction History</title>
+
+    <!-- CSS link -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='transactions.css') }}">
+
+<body>
+
+<div class="page-container">
+    <h2>Transaction History</h2>
+
+    <div class="table-card">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Amount (₹)</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+
+            {% for t in txns %}
+            <tr>
+                <td>{{ t.txn_id }}</td>
+                <td>{{ t.from_account }}</td>
+                <td>{{ t.to_account }}</td>
+                <td>{{ t.amount }}</td>
+                <td>{{ t.txn_type }}</td>
+                <td>{{ t.txn_date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <a href="/dashboard" class="back-btn">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>

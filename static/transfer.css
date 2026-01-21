@@ -1,0 +1,81 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CREDIT CARD BACKGROUND */
+body {
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1616077168079-7e09a677fb2d")
+                no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CARD */
+.transfer-card {
+    width: 360px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* ICON */
+.transfer-card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+.transfer-card h2 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* INPUTS */
+.transfer-card input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.transfer-card button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.transfer-card button:hover {
+    opacity: 0.9;
+}
+
+/* BACK LINK */
+.back {
+    display: inline-block;
+    margin-top: 18px;
+    color: #9fd3ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    text-decoration: underline;
+}

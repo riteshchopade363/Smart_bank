@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e2ec);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.deposit-card {
+    background: #ffffff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+/* Heading */
+.deposit-card h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.deposit-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button */
+.deposit-card button {
+    width: 100%;
+    padding: 12px;
+    background: #4f8cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.deposit-card button:hover {
+    background: #3b76e0;
+}
+
+/* Back link */
+.deposit-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4f8cff;
+    font-weight: 500;
+}
+
+.deposit-card a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transfer Money</title>
+
+    <!-- IMPORTANT LINE -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='transfer.css') }}">
+</head>
+<body>
+
+<div class="transfer-card">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331940.png" alt="Transfer">
+
+    <h2>Transfer Money</h2>
+
+    <form method="POST">
+        <input type="number" name="to_account" placeholder="Recipient User ID" required>
+        <input type="number" name="amount" placeholder="Enter Amount" required>
+        <button type="submit">Transfer Now</button>
+    </form>
+
+    <a href="/dashboard" class="back">← Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

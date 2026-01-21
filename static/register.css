@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("banks_photo.png");
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background: transparent;
+    backdrop-filter: blur(100px);
+    border: 2px solid #000;
+    width: 460px;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.register-box h2 {
+    color: antiquewhite;
+    margin-bottom: 16px;
+    letter-spacing: 0.8px;
+}
+
+.register-box h4 {
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 0.8px;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 9px;
+    margin: 6px 0;
+    background: transparent;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.register-box input::placeholder {
+    color: #ccc;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #ddd;
+    margin: 10px 0;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.terms a {
+    color: #6dd5ed;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #7cffcb, #6dd5ed);
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.login-link {
+    margin-top: 14px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.login-link a {
+    color: #6dd5ed;
+    text-decoration: none;
+    font-weight: 500;
+}

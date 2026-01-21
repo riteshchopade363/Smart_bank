@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <meta charset="UTF-8">
+    <title>Create Account - Smart Banking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="register-box">
+        <h2  class="neon-3d">🏦WELLCOME TO CHOPADE  SMART  BANK</h2>
+        <style>
+            .neon-3d{
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #fffb00;
+            text-shadow:
+                0 0 5px #da7d03,
+                0 0 10px #f6ff00,
+                2px 2px 0 #a79400,
+                4px 4px 10px rgba(0,0,0,0.5);
+            }
+        </style>
+        <h4>CREATE AN ACCOUNT</h4>
+
+        <form method="post">
+            <input type="text" name="Username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="mobile" placeholder="Mobile Number" required>
+
+
+            <div class="terms">
+                <input type="checkbox" required>
+                <span>I agree all statements in <a href="/terms">Terms of service</a></span>
+            </div>
+
+            <button type="submit">REGISTER</button>
+        </form>
+
+        <p class="login-link">
+            Have already an account? <a href="/login">Login here</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

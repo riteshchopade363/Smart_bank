@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw Money</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='withdraw.css') }}">
+</head>
+
+<body>
+
+    <div class="withdraw-wrapper">
+        <div class="withdraw-card">
+
+            <h2>💸 Withdraw Money</h2>
+
+            <p class="balance">
+                Available Balance<br>
+                <span>₹ {{ balance }}</span>
+            </p>
+
+            <form method="post">
+                <input type="number" name="amount" placeholder="Enter amount" required>
+                <button type="submit">Withdraw</button>
+            </form>
+
+            {% if error %}
+                <p class="msg error">{{ error }}</p>
+            {% endif %}
+
+            {% if success %}
+                <p class="msg success">{{ success }}</p>
+            {% endif %}
+
+            <a href="/dashboard" class="back">← Back to Dashboard</a>
+
+        </div>
+    </div>
+
+</body>
+</html>

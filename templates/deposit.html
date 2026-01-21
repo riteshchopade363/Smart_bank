@@ -1,0 +1,15 @@
+<html>
+     <link rel="stylesheet" href="{{ url_for('static', filename='deposit.css') }}">
+<body>
+    <div class="deposit-card">
+        <h2>Deposit Money</h2>
+
+        <form method="POST">
+            <input type="number" name="amount" placeholder="Enter amount" required>
+            <button type="submit">Deposit</button>
+        </form>
+
+        <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Banking Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+
+    <!-- HEADER -->
+    <header class="top-header">
+        <h2>Hello, {{ name }} 👋</h2>
+        <span class="tag">Smart Banking</span>
+    </header>
+
+    <!-- BALANCE RING -->
+    <section class="balance-section">
+        <div class="balance-ring">
+            <div class="balance-inner">
+                <span class="balance-label">Balance</span>
+                <span class="balance-amount">₹ {{ balance }}</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTION CARDS -->
+    <section class="actions">
+        <a href="/deposit" class="action-card blue">
+            <h3>Deposit</h3>
+            <p>Add money</p>
+        </a>
+
+        <a href="/transfer" class="action-card purple">
+            <h3>Transfer</h3>
+            <p>Send money</p>
+        </a>
+
+        <a href="/transactions" class="action-card green">
+            <h3>History</h3>
+            <p>View transactions</p>
+        </a>
+
+        <a href="/withdraw" class="action-card red">
+            <h3>Withdraw</h3>
+            <p>Take money</p>
+        </a>
+
+
+        <a href="/logout" class="action-card red">
+            <h3>Logout</h3>
+            <p>Secure exit</p>
+        </a>
+    </section>
+
+</div>
+
+</body>
+</html>

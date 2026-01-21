@@ -1,0 +1,46 @@
+<!--<h2>Account Created Successfully 🎉</h2>
+
+<p>Welcome <b>{{ name }}</b></p>
+
+<p>Your Account Number:</p>
+<h1 style="color:green">{{ account_no }}</h1>
+
+<p style="color:red">
+    Please save this Account Number.<br>
+    You will need it for login.
+</p>
+
+<a href="/login">Go to Login</a>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Created</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='account_created.css') }}">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>🎉 Account Created Successfully</h2>
+
+        <p>Welcome</p>
+        <p class="name">{{ name }}</p>
+
+        <p>Your Account Number</p>
+        <div class="account-no">{{ account_no }}</div>
+
+        <p class="warning">
+            ⚠Please save this Account Number.<br>
+            You will need it for login.
+        </p>
+
+        <a href="/login">Go to Login</a>
+    </div>
+
+</body>
+</html>

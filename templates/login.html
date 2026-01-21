@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <meta charset="UTF-8">
+    <title>Login - Smart Banking</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="card">
+
+        <!-- LEFT GREEN SECTION -->
+        <div class="left">
+            <h1>CHOPADE BANK </h1>
+            <p>
+                Chopade bank  is a , Smart Banking is a modern digital banking system designed to make financial transactions fast, secure, and convenient.
+                 It leverages technology to provide users with real-time account management, online transfers, and intelligent financial services.
+            </p>
+            <button class="read-btn" >Read More</button>
+        </div>
+
+        <!-- RIGHT LOGIN SECTION -->
+        <div class="right">
+            <h2>Login</h2>
+
+            <form method="POST">
+                 <input type="text" name="account_no" placeholder="Account Number" required>
+                <input type="text" name="mobile" placeholder="Mobile Number" required>
+                <button type="submit">Send OTP</button>
+
+                <button type="submit" class="login-btn">Sign In</button>
+            </form>
+
+            <div class="links">
+                <a href="#">Forget password?</a>
+                <a href="/register">Create an account.</a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="footer">Designed by <b>Ritesh chopade</b></p>
+</div>
+
+</body>
+</html>
